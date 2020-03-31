@@ -12,6 +12,19 @@ This repository contains data and code for the paper [GPS-Net: Graph Property Se
 <img src="images/framework.jpg"/>
 </div>
 
+If the paper significantly inspires you, we request that you cite our work:
+### Bibtex
+```
+@misc{lin2020gpsnet,
+    title={GPS-Net: Graph Property Sensing Network for Scene Graph Generation},
+    author={Xin Lin and Changxing Ding and Jinquan Zeng and Dacheng Tao},
+    year={2020},
+    eprint={2003.12962},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+```
+
 Our reimplementations are based on [rowanz/neural-motifs](https://github.com/rowanz/neural-motifs), and if you get any problem that cause you unable to run the project, you can check the issues under [rowanz/neural-motifs](https://github.com/rowanz/neural-motifs) first.
 
 **The Completed code is coming soon.**
