@@ -4,7 +4,7 @@
 ![PyTorch](https://img.shields.io/badge/pytorch-0.3.0-%237732a8) 
 
 
-This repository contains data and code for the paper [GPS-Net: Graph Property Sensing Network for Scene Graph Generation (CVPR 2020)].
+This repository contains data and code for the paper [GPS-Net: Graph Property Sensing Network for Scene Graph Generation (CVPR 2020)](https://arxiv.org/pdf/2003.12962).
 
 
 
