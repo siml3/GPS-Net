@@ -1,0 +1,45 @@
+MODEL:
+  # TYPE: generalized_rcnn
+  TYPE: model_builder_rel_gpsnet
+  SUBTYPE: 3
+  USE_OVLP_FILTER: True
+  USE_FREQ_BIAS: True
+  NO_FC7_RELU: True
+  USE_SPATIAL_FEAT: False
+  ADD_SO_SCORES: True
+  ADD_SCORES_ALL: True
+  USE_BG: True
+  CONV_BODY: VGG16.VGG16_conv_body
+  FASTER_RCNN: True
+NUM_GPUS: 8
+SOLVER:
+  WEIGHT_DECAY: 0.0001
+  LR_POLICY: steps_with_decay
+  BASE_LR: 0.01
+  GAMMA: 0.1
+  MAX_ITER: 62723  # 62723 images
+  STEPS: [0, 41815, 55754]
+VGG16:
+  VG_PRETRAINED_WEIGHTS: 'detection_models/vg/VGG16/model_step479999.pth'
+  VG_PRD_PRETRAINED_WEIGHTS: 'detection_models/vg/VGG16/model_step479999.pth'
+FAST_RCNN:
+  ROI_BOX_HEAD: VGG16.VGG16_roi_conv5_head
+  ROI_BOX_HEAD_PRD: VGG16.VGG16_roi_conv5_head_prd
+  ROI_XFORM_METHOD: RoIAlign
+LANGUAGE:
+  WORD_VECS: 'word_embed'
+  OBJS_CLASSES: ['__background__', 'airplane', 'animal', 'arm', 'bag', 'banana', 'basket', 'beach', 'bear', 'bed', 'bench', 'bike', 'bird', 'board', 'boat', 'book', 'boot', 'bottle', 'bowl', 'box', 'boy', 'branch', 'building', 'bus', 'cabinet', 'cap', 'car', 'cat', 'chair', 'child', 'clock', 'coat', 'counter', 'cow', 'cup', 'curtain', 'desk', 'dog', 'door', 'drawer', 'ear', 'elephant', 'engine', 'eye', 'face', 'fence', 'finger', 'flag', 'flower', 'food', 'fork', 'fruit', 'giraffe', 'girl', 'glass', 'glove', 'guy', 'hair', 'hand', 'handle', 'hat', 'head', 'helmet', 'hill', 'horse', 'house', 'jacket', 'jean', 'kid', 'kite', 'lady', 'lamp', 'laptop', 'leaf', 'leg', 'letter', 'light', 'logo', 'man', 'men', 'motorcycle', 'mountain', 'mouth', 'neck', 'nose', 'number', 'orange', 'pant', 'paper', 'paw', 'people', 'person', 'phone', 'pillow', 'pizza', 'plane', 'plant', 'plate', 'player', 'pole', 'post', 'pot', 'racket', 'railing', 'rock', 'roof', 'room', 'screen', 'seat', 'sheep', 'shelf', 'shirt', 'shoe', 'short', 'sidewalk', 'sign', 'sink', 'skateboard', 'ski', 'skier', 'sneaker', 'snow', 'sock', 'stand', 'street', 'surfboard', 'table', 'tail', 'tie', 'tile', 'tire', 'toilet', 'towel', 'tower', 'track', 'train', 'tree', 'truck', 'trunk', 'umbrella', 'vase', 'vegetable', 'vehicle', 'wave', 'wheel', 'window', 'windshield', 'wing', 'wire', 'woman', 'zebra']
+RPN:
+  SIZES: (32, 64, 128, 256, 512)
+TRAIN:
+  SCALES: (800,)
+  MAX_SIZE: 1333
+  IMS_PER_BATCH: 1
+  BATCH_SIZE_PER_IM: 512
+TEST:
+  FORCE_JSON_DATASET_EVAL: True
+  SCALE: 800
+  MAX_SIZE: 1333
+  NMS: 0.5
+  RPN_PRE_NMS_TOP_N: 6000
+  RPN_POST_NMS_TOP_N: 1000

@@ -1,6 +1,6 @@
-[submodule "draft-version"]
-	path = draft-version
-	url = https://github.com/taksau/sglabv1
 [submodule "sglabv1"]
 	path = sglabv1
 	url = https://github.com/taksau/sglabv1.git
+[submodule "gpsnet-detectron/Detectron.pytorch"]
+	path = gpsnet-detectron/Detectron.pytorch
+	url = git@github.com:roytseng-tw/Detectron.pytorch.git
