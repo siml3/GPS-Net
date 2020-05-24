@@ -1,3 +1,6 @@
 [submodule "draft-version"]
 	path = draft-version
 	url = https://github.com/taksau/sglabv1
+[submodule "sglabv1"]
+	path = sglabv1
+	url = https://github.com/taksau/sglabv1.git
