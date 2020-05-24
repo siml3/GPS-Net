@@ -28,8 +28,7 @@ If the paper significantly inspires you, we request that you cite our work:
 Our reimplementations are based on [rowanz/neural-motifs](https://github.com/rowanz/neural-motifs), and if you get any problem that cause you unable to run the project, you can check the issues under [rowanz/neural-motifs](https://github.com/rowanz/neural-motifs) first.
 
 **The Completed code is coming soon.**
-But we have released some codes of **DMP Modules**, **NPS-Loss** and **Frequency Softening**. And you can see the codes in [lib](https://github.com/taksau/GPS-Net/tree/master/lib). **Also,you can find more details in [the draft version](https://github.com/taksau/sglabv1)**.
-
+But we have released some codes of **DMP Modules**, **NPS-Loss** and **Frequency Softening**. And you can see the codes in [lib](https://github.com/taksau/GPS-Net/tree/master/lib).**Also,you can find more details in [the draft version](https://github.com/taksau/sglabv1) or our another [implementation](https://github.com/taksau/GPS-Net/tree/master/gpsnet-detectron) with a better object detection backbone.**
 ## Demo Video
 [Scene Graph Generation for Cityscape Video](https://www.youtube.com/watch?v=9ZJXiXCIqxc)
 
