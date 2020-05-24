@@ -103,7 +103,7 @@ We use three evaluation metrics for Visual Genome:
 
 Use `--use_gt_boxes` option to test it with "SGCLS"; use `--use_gt_boxes --use_gt_labels` options to test it with "PRDCLS". The results will vary slightly with the last line of Table 1 in the paper.
 
-To test a trained model using a vg_VGG16 backbone with "SGSCLS", run
+To test a trained model using a vg_VGG16 backbone with "SGCLS", run
 ```
 python ./tools/test_net_rel_mps.py --dataset vg --cfg configs/vg/e2e_faster_rcnn_VGG16_8_epochs_vg_v3_default_sgcls.yaml --load_ckpt trained_models/vg_VGG16/model_step62722.pth --output_dir Outputs/vg_VGG16 --multi-gpu-testing --do_val --use_gt_boxes
 ```
