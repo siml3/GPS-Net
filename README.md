@@ -15,13 +15,12 @@ This repository contains data and code for the paper [GPS-Net: Graph Property Se
 If the paper significantly inspires you, we request that you cite our work:
 ### Bibtex
 ```
-@misc{lin2020gpsnet,
-    title={GPS-Net: Graph Property Sensing Network for Scene Graph Generation},
-    author={Xin Lin and Changxing Ding and Jinquan Zeng and Dacheng Tao},
-    year={2020},
-    eprint={2003.12962},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+@inproceedings{lin2020gps,
+  title={GPS-Net: Graph Property Sensing Network for Scene Graph Generation},
+  author={Lin, Xin and Ding, Changxing and Zeng, Jinquan and Tao, Dacheng},
+  booktitle={Proc. IEEE Conf. Comput. Vis. Pattern Recognit.},
+  pages={3746--3753},
+  year={2020}
 }
 ```
 
